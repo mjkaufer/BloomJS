@@ -18,3 +18,7 @@ A JavaScript implementation of the Bloom Filter
 ## Contributing
 
 	If you have any ideas or suggestions for optimization, leave an issue or submit a pull request!
+
+## Credits
+
+	The JavaScript SHA1 function used is from [Paul Johnson's implementation](http://pajhome.org.uk/crypt/md5/sha1.html)
