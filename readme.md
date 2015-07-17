@@ -4,6 +4,8 @@ A JavaScript implementation of the Bloom Filter
 
 ## Usage
 
+	To use BloomJS in your project, just import the `bloom.min.js` file from the `dist` directory!
+
 	Constructor: `var bloom = new Bloom(k, m, n, hashFunction)`
 		`k`: amount of hashes, defaults to `Math.max(Math.round(m / n * Math.LN2), 1)`
 		`m`: amount of bits in the array, defaults to `1000`
@@ -18,6 +20,14 @@ A JavaScript implementation of the Bloom Filter
 ## Contributing
 
 	If you have any ideas or suggestions for optimization, leave an issue or submit a pull request!
+
+	If you do submit a pull request, make sure you compile `lib/bloom.js` into its minified version, using the gulpfile.
+
+## Todo
+
+	* Add tests
+	* Basic remove functionality, with another bloom filter
+
 
 ## Credits
 
