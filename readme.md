@@ -33,6 +33,7 @@ If you do submit a pull request, make sure you compile `lib/bloom.js` into its m
 
 * Add tests
 * Basic remove functionality, with another bloom filter
+* More efficient datastructure for the array
 
 
 ## Credits
