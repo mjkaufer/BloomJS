@@ -1,14 +1,12 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename');
+	concat = require('gulp-concat');
 
-gulp.task('compress', function() {
-	return gulp.src('lib/*.js')
-		.pipe(uglify())
-		.pipe(rename(function(path){
-			path.extname = ".min.js"
-		}))
-		.pipe(gulp.dest('dist'));
+gulp.task('scripts', function() {
+  gulp.src('lib/*.js')
+    .pipe(concat('bloom.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/'))
 });
 
-gulp.task('default', ['compress'])
+gulp.task('default', ['scripts'])
